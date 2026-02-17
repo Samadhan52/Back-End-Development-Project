@@ -7,11 +7,9 @@ SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 json_url = os.path.join(SITE_ROOT, "data", "pictures.json")
 data: list = json.load(open(json_url))
 
-
 ######################################################################
 # RETURN HEALTH OF THE APP
 ######################################################################
-
 
 @app.route("/health")
 def health():
