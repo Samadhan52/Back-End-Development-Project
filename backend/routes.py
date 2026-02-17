@@ -11,6 +11,7 @@ data: list = json.load(open(json_url))
 # RETURN HEALTH OF THE APP
 ######################################################################
 
+
 @app.route("/health")
 def health():
     return jsonify(dict(status="OK")), 200
@@ -18,7 +19,6 @@ def health():
 ######################################################################
 # COUNT THE NUMBER OF PICTURES
 ######################################################################
-
 
 @app.route("/count")
 def count():
